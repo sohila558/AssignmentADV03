@@ -1,4 +1,5 @@
 ﻿using AssignmentADV03;
+using static Demo.SortingAlgorithms;
 
 namespace Demo
 {
@@ -11,6 +12,15 @@ namespace Demo
 
     internal class Program
     {
+        public static void PrintArray<T>(T[] values)
+        {
+            Console.WriteLine();
+            foreach (T item in values)
+            {
+                Console.WriteLine($"{item}");
+            }
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
             #region Delegate Overview
@@ -42,6 +52,18 @@ namespace Demo
             //int Count = X("Hello World");
             //Console.WriteLine(Count); 
             #endregion
+
+            //int[] Numbers = { 9, 8, 7, 1, 2, 3, 6, 5, 4 };
+
+            //PrintArray(Numbers);
+
+            ////SortingAlgorithms.BubbleSortAscending(Numbers); // Sorting Ascending
+
+            //SortingFuncDelegate X = SortingConditions.CompareGreater;
+            //SortingAlgorithms.BubbleSort(Numbers, X); // Sorting Descending
+
+
+            //PrintArray(Numbers);
 
 
 
