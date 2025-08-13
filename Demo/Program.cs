@@ -81,6 +81,7 @@ namespace Demo
             //Console.WriteLine(Count); 
             #endregion
 
+            #region DelegateEX02
             //int[] Numbers = { 9, 8, 7, 1, 2, 3, 6, 5, 4 };
 
             //PrintArray(Numbers);
@@ -88,25 +89,47 @@ namespace Demo
             ////SortingAlgorithms.BubbleSortAscending(Numbers); // Sorting Ascending
 
             //SortingFuncDelegate X = SortingConditions.CompareGreater;
-            //SortingAlgorithms.BubbleSort(Numbers, X); // Sorting Descending
+            //SortingAlgorithms.BubbleSort(Numbers, X); // Sorting Descending 
+            #endregion
 
-
+            #region DelegateEX03
             //PrintArray(Numbers);
 
             // string[] Names = { "Ahmed", "Ali", "Mariam", "Mahmoud", "Amr", "Mona", "Khaled" };
 
             //List<int> Numbers = Enumerable.Range(1, 100).ToList();
-            
+
             //List<int> OddNumbers = FindOddNumber(Numbers);
 
-            //PrintList(OddNumbers);
+            //PrintList(OddNumbers); 
+            #endregion
+
+            // Built-in Delegate
+
+            // Predicate - Func - Action
+
+            // Predicate
+
+            // ConditionFuncDelegate<int> X = ConditionFunction.CheckEven;
+
+            // Predicate<int> predicate = ConditionFunction.CheckEven;
+
+            // bool r = predicate.Invoke(1);
+
+            // Console.WriteLine(r);
+
+            // Func
+
+            //Func<>
 
 
 
 
 
-
-
+        }
+        public static int Fun01()
+        {
+            return 1;
         }
     }
 }
