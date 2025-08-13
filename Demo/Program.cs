@@ -21,6 +21,34 @@ namespace Demo
             }
             Console.WriteLine();
         }
+
+        public static List<int> FindOddNumber (List<int> list)
+        {
+            List<int> Result = new List<int> ();
+
+            if (list?.Count > 0)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i] % 2 != 0)
+                    {
+                        Result.Add (list[i]);
+                    }
+                }
+            }
+            return Result;
+        }
+
+        public static void PrintList<T>(List<T> values)
+        {
+            Console.WriteLine();
+            foreach (T item in values)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             #region Delegate Overview
@@ -66,6 +94,12 @@ namespace Demo
             //PrintArray(Numbers);
 
             // string[] Names = { "Ahmed", "Ali", "Mariam", "Mahmoud", "Amr", "Mona", "Khaled" };
+
+            //List<int> Numbers = Enumerable.Range(1, 100).ToList();
+            
+            //List<int> OddNumbers = FindOddNumber(Numbers);
+
+            //PrintList(OddNumbers);
 
 
 
