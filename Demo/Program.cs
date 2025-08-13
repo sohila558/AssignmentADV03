@@ -127,14 +127,32 @@ namespace Demo
             // action.Invoke(); 
             #endregion
 
+            #region Anonymos Method - Lambda Expression
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //Anonymous Method
+
+            //Func<int, bool> func = delegate (int X) { return X % 2 == 0; };
+
+            //FindElements(Numbers, func);
+            //FindElements(Numbers, delegate (int X) { return X % 2 == 0; });
+
+            //Func<int, bool> func = ConditionsFunction.CheckEven;
+            //func(1);
+
+            // Lambda Expression
+
+            // Func<int, bool> func = X => X % 2 == 0 
+            #endregion
+
 
 
 
 
         }
-        public static int Fun01()
-        {
-            return 1;
-        }
+        //public static int Fun01()
+        //{
+        //    return 1;
+        //}
     }
 }
