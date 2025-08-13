@@ -104,6 +104,7 @@ namespace Demo
             //PrintList(OddNumbers); 
             #endregion
 
+            #region Built-in Delegate
             // Built-in Delegate
 
             // Predicate - Func - Action
@@ -120,7 +121,11 @@ namespace Demo
 
             // Func
 
-            //Func<>
+            //Func<bool> Func = Fun01;
+
+            // Action<string> action = Print;
+            // action.Invoke(); 
+            #endregion
 
 
 
