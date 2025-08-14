@@ -145,6 +145,16 @@ namespace Demo
             // Func<int, bool> func = X => X % 2 == 0 
             #endregion
 
+            #region Var
+            // C# Keyword
+            // C# 3.0
+            // Var
+
+            //var X = 12;
+
+            //var predicate = SortingConditions.CompareGreater; 
+            #endregion
+
 
 
 
